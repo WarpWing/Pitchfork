@@ -19,14 +19,16 @@ def download_and_clean_file(url, filename):
     for comment in soup.findAll(text=lambda text: isinstance(text, Comment)):
         comment.extract()
 
+    # Remove images
+    for img in soup.find_all("img"):
+        img.extract()
+
     # Remove elements with CSS properties and encoded image data
     for tag in soup.find_all():
         if tag.has_attr('style'):
             pass
         elif tag.has_attr('o:gfxdata') or tag.has_attr('v:imagedata'):
             tag.extract()
-
-
 
     with open(filename, 'w', encoding="utf-8") as f:
         f.write(str(soup))
