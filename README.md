@@ -10,6 +10,6 @@ In additional, due to a lack of motivation, I've only included the basic dishes 
 [Ty Chermsirivatana](https://github.com/WarpWing) '27 - Initial Setup 
 
 # Acknowledgements 
-[Boosung Kim](https://github.com/boosungkim) - For his work on his own Dickinson Menu Bot which inspired this project.
+[Boosung Kim '25](https://github.com/boosungkim) - For his work on his own Dickinson Menu Bot which inspired this project.
 
-[Evan Wong](https://github.com/evanwong1020) - For pushing me to actually create my own Bot instead of complaining.
+[Evan Wong '24](https://github.com/evanwong1020) - For pushing me to actually create my own Bot instead of complaining.
