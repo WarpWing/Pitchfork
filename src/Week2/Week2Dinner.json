@@ -1,0 +1,61 @@
+{
+  "Week2Dinner": {
+    "Entrée1": {
+      "Sunday": "Roast Pork W/ Apple Brandy Sauce",
+      "Monday": "Flat Iron Steak w/ Tomatillo Sauce",
+      "Tuesday": "Roasted Turkey & Gravy with Stuffing",
+      "Wednesday": "Beef Braciole Style",
+      "Thursday": "Swiss Steak",
+      "Friday": "Today's Catch",
+      "Saturday": "Butter Herbed 8 Cut Chicken"
+    },
+    "Entrée2": {
+      "Sunday": "Salmon w/ Honey Pecan Sauce",
+      "Monday": "Hot Wings",
+      "Tuesday": "Breaded Clam Strips",
+      "Wednesday": "Crab & Shrimp Imperial",
+      "Thursday": "Honey Fried Chicken",
+      "Friday": "Grilled Lime Chicken w/ Mango Salsa",
+      "Saturday": "Beef Tacos w/ Toppings"
+    },
+    "Vegan/Vegetarian or Additional Entrée": {
+      "Sunday": "Tempeh & Vegetable Masala",
+      "Monday": "Lentil & Sweet Potato Stew",
+      "Tuesday": "Vegan Ratatouille",
+      "Wednesday": "Lentil Dhav w/ Cilantro Basmati",
+      "Thursday": "Spicy Tempeh Bulgogi",
+      "Friday": "Falafel Burger",
+      "Saturday": "Vegan Protein Taco"
+    },
+    "Grill": {
+      "Sunday": "Chipotle Chicken Steak with Charred Corn Salsa",
+      "Monday": "Grilled Fish Taco",
+      "Tuesday": "Grilled Fish Taco",
+      "Wednesday": "Sweet & Sour Chicken with Steamed Rice",
+      "Thursday": "Fettuccini, Smoked Turkey & Peppercorn Sauce",
+      "Friday": "Rib Eye Steak",
+      "Saturday": "Rigatoni with Tomato Vodka Sauce"
+    },
+    "Starch": {
+      "Sunday": "Roasted Garlic & Kale Mashed Potatoes",
+      "Monday": "Rosemary Roasted Potatoes",
+      "Tuesday": "Fresh Mashed Potatoes",
+      "Wednesday": "Sweet Potato with Whipped Brown Sugar Butter",
+      "Thursday": "Tater Tots",
+      "Friday": "Roasted Root Vegetables",
+      "Saturday": "Farm Roasted Potatoes"
+    },
+    "Veggie1": {
+      "Sunday": "Whole Green Beans",
+      "Monday": "Peas",
+      "Tuesday": "Corn",
+      "Wednesday": "Broccoli Romanesco Blend",
+      "Thursday": "Steamed Baby Carrots",
+      "Friday": "Sugar Snap Peas",
+      "Saturday": "Roasted Broccoli"
+    },
+    "Veggie2": {
+      "Saturday": "Baby Lima Beans"
+    }
+  }
+}
