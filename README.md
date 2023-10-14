@@ -11,4 +11,5 @@ Ty "WarpWing" Chermsirivatana '27 - Initial Setup
 
 # Acknowledgements 
 [Boosung Kim](https://github.com/boosungkim) - For his work on his own Dickinson Menu Bot which inspired this project.
+
 [Evan Wong](https://github.com/evanwong1020) - For pushing me to actually create my own Bot instead of complaining.
