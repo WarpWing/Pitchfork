@@ -7,7 +7,7 @@ In additional, due to a lack of motivation, I've only included the basic dishes 
 
 
 # Contributors
-[Ty Chermsirivatana](https://github.com/WarpWing) '27 - Initial Setup 
+[Ty Chermsirivatana '27](https://github.com/WarpWing) - Initial Work
 
 # Acknowledgements 
 [Boosung Kim '25](https://github.com/boosungkim) - For his work on his own Dickinson Menu Bot which inspired this project.
