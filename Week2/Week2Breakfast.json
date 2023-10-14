@@ -1,0 +1,69 @@
+{
+    "Week2Breakfast": {
+      "Grill1": {
+        "Monday": "Fried Eggs",
+        "Tuesday": "Fried Eggs",
+        "Wednesday": "Fried Eggs",
+        "Thursday": "Fried Eggs",
+        "Friday": "Fried Eggs",
+        "Saturday": "Fried Eggs"
+      },
+      "Grill2": {
+        "Monday": "French Toast",
+        "Tuesday": "Sun Butter Pancakes",
+        "Wednesday": "Chocolate Chip Pancakes",
+        "Thursday": "Buttermilk Pancakes",
+        "Friday": "Vegan Oatmeal Pancakes",
+        "Saturday": "French Toast Sticks"
+      },
+      "Entrée1": {
+        "Monday": "Scrambled Eggs",
+        "Tuesday": "Scrambled Eggs",
+        "Wednesday": "Scrambled Eggs",
+        "Thursday": "Scrambled Eggs",
+        "Friday": "Scrambled Eggs",
+        "Saturday": "Scrambled Eggs"
+      },
+      "Entrée2": {
+        "Monday": "Baked Mixed Fruit Compote Crisp",
+        "Tuesday": "Baked Oatmeal",
+        "Wednesday": "Amish Breakfast Casserole",
+        "Thursday": "Sausage Gravy w/Baked Buttermilk Biscuit",
+        "Friday": "Baked Coconut Blueberry Oatmeal",
+        "Saturday": "Baked Oatmeal"
+      },
+      "Vegan Scramble": {
+        "Monday": "Hard Boiled Eggs & Vegan Scramble",
+        "Tuesday": "Hard Boiled Eggs & Vegan Scramble",
+        "Wednesday": "Hard Boiled Eggs & Vegan Scramble",
+        "Thursday": "Hard Boiled Eggs & Vegan Scramble",
+        "Friday": "Hard Boiled Eggs & Vegan Scramble",
+        "Saturday": "Hard Boiled Eggs & Vegan Scramble"
+      },
+      "Oatmeal-ish": {
+        "Monday": "Oatmeal",
+        "Tuesday": "Oatmeal",
+        "Wednesday": "Oatmeal",
+        "Thursday": "Oatmeal",
+        "Friday": "Oatmeal",
+        "Saturday": "Oatmeal"
+      },
+      "Side - Meat": {
+        "Monday": "Bacon",
+        "Tuesday": "Flaked Tuna",
+        "Wednesday": "Sausage Patty",
+        "Thursday": "Smoked Ham",
+        "Friday": "Chicken Sausage Patty & Vegan Sausage Patty",
+        "Saturday": "White Fish"
+      },
+      "Side - Starch": {
+        "Monday": "Tri Taters",
+        "Tuesday": "Breakfast Pizza",
+        "Wednesday": "Home Fried Potatoes",
+        "Thursday": "Tri Taters",
+        "Friday": "Home Fried Potatoes",
+        "Saturday": "Breakfast Pizza"
+      }
+    }
+  }
+  

@@ -1,17 +1,16 @@
-Date,Week,Breakfast,Lunch,Dinner
-8/27,Week 1,https://www2.dickinson.edu/DiningMenus/DH_C1_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Dinner.htm
-9/3,Week 2,https://www2.dickinson.edu/DiningMenus/DH_C2_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Dinner.htm
-9/10,Week 3,https://www2.dickinson.edu/DiningMenus/DH_C3_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Dinner.htm
-9/17,Week 4,https://www2.dickinson.edu/DiningMenus/DH_C4_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Dinner.htm
-9/24,Week 1,https://www2.dickinson.edu/DiningMenus/DH_C1_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Dinner.htm
-10/1,Week 2,https://www2.dickinson.edu/DiningMenus/DH_C2_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Dinner.htm
-10/8,Week 3,https://www2.dickinson.edu/DiningMenus/DH_C3_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Dinner.htm
-10/15,Week 4,https://www2.dickinson.edu/DiningMenus/DH_C4_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Dinner.htm
-10/22,Week 1,https://www2.dickinson.edu/DiningMenus/DH_C1_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Dinner.htm
-10/29,Week 2,https://www2.dickinson.edu/DiningMenus/DH_C2_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Dinner.htm
-11/5,Week 3,https://www2.dickinson.edu/DiningMenus/DH_C3_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Dinner.htm
-11/12,Week 4,https://www2.dickinson.edu/DiningMenus/DH_C4_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Dinner.htm
-11/19,Week 1,https://www2.dickinson.edu/DiningMenus/DH_C1_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C1_Dinner.htm
-11/26,Week 2,https://www2.dickinson.edu/DiningMenus/DH_C2_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C2_Dinner.htm
-12/3,Week 3,https://www2.dickinson.edu/DiningMenus/DH_C3_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C3_Dinner.htm
-12/10,Week 4,https://www2.dickinson.edu/DiningMenus/DH_C4_Breakfast.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Lunch.htm,https://www2.dickinson.edu/DiningMenus/DH_C4_Dinner.htm
+Date,Week,
+8/27,Week 1
+9/3,Week 2
+9/10,Week 3
+9/17,Week 4
+9/24,Week 1
+10/1,Week 2
+10/8,Week 3
+10/15,Week 4
+10/22,Week 1
+10/29,Week 2
+11/12,Week 4
+11/19,Week 1
+11/26,Week 2
+12/3,Week 3
+12/10,Week 4

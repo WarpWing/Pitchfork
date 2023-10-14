@@ -1,0 +1,74 @@
+{
+  "Week1Breakfast": {
+    "Grill": {
+      "Sunday": "Served at Sunday Lunch",
+      "Monday": "Fried Eggs",
+      "Tuesday": "Fried Eggs",
+      "Wednesday": "Fried Eggs",
+      "Thursday": "Fried Eggs",
+      "Friday": "Fried Eggs",
+      "Saturday": "Fried Eggs"
+    },
+    "Grill2": {
+      "Monday": "Blueberry Pancakes",
+      "Tuesday": "Chocolate Chip Pancakes",
+      "Wednesday": "French Toast",
+      "Thursday": "Buttermilk Pancakes",
+      "Friday": "French Toast Sticks",
+      "Saturday": "Vegan Oatmeal Pancakes"
+    },
+    "Entrée1": {
+      "Monday": "Scrambled Eggs",
+      "Tuesday": "Scrambled Eggs",
+      "Wednesday": "Scrambled Eggs",
+      "Thursday": "Scrambled Eggs",
+      "Friday": "Scrambled Eggs",
+      "Saturday": "Scrambled Eggs"
+    },
+    "Entrée2": {
+      "Monday": "Omelette Casserole",
+      "Tuesday": "16\" Breakfast Pizza",
+      "Wednesday": "Baked Oatmeal",
+      "Thursday": "Baked Oatmeal",
+      "Friday": "Coconut Blueberry Baked Oatmeal",
+      "Saturday": "Amish Breakfast Casserole"
+    },
+    "Entrée3": {
+      "Saturday": "Surimi"
+    },
+    "Hard Boiled Eggs & Vegan Scramble": {
+      "Sunday": "Hard Boiled Eggs & Vegan Scramble",
+      "Monday": "Hard Boiled Eggs & Vegan Scramble",
+      "Tuesday": "Hard Boiled Eggs & Vegan Scramble",
+      "Wednesday": "Hard Boiled Eggs & Vegan Scramble",
+      "Thursday": "Hard Boiled Eggs & Vegan Scramble",
+      "Friday": "Hard Boiled Eggs & Vegan Scramble",
+      "Saturday": "Hard Boiled Eggs & Vegan Scramble"
+    },
+    "Oatmeal-ish": {
+      "Sunday": "Oatmeal-ish",
+      "Monday": "Oatmeal",
+      "Tuesday": "Oatmeal",
+      "Wednesday": "Oatmeal",
+      "Thursday": "Oatmeal",
+      "Friday": "Oatmeal",
+      "Saturday": "Oatmeal"
+    },
+    "Side - Meat": {
+      "Monday": "Vegan Sausage Patty",
+      "Tuesday": "White Fish",
+      "Wednesday": "Chicken Sausage Patty",
+      "Thursday": "Breakfast Link Sausage",
+      "Friday": "Fresh Link Sausage",
+      "Saturday": "Vegan Sausage Patty"
+    },
+    "Side - Starch": {
+      "Monday": "Home Fried Potatoes",
+      "Tuesday": "",
+      "Wednesday": "Baby Potato Cakes",
+      "Thursday": "Homemade Hash Browns",
+      "Friday": "",
+      "Saturday": ""
+    }
+  }
+}

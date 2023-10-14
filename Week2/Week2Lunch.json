@@ -1,0 +1,86 @@
+{
+    "Week2Lunch": {
+      "Soup1": {
+        "Sunday": "Mexican Tomato Potato Soup",
+        "Monday": "Lemon Dill Chicken & Rice Soup",
+        "Tuesday": "Tomato & Cannellini Bean Soup",
+        "Wednesday": "Minestrone w/Beans Soup",
+        "Thursday": "Pasta & Chickpea Soup",
+        "Friday": "Pasta Fagioli Soup",
+        "Saturday": "Vegetable Rice Soup"
+      },
+      "Soup2": {
+        "Sunday": "",
+        "Monday": "Cream of Tomato Soup",
+        "Tuesday": "Stuffed Pepper Soup",
+        "Wednesday": "Shrimp & Corn Bisque",
+        "Thursday": "Tortilla & Smoked Turkey Soup",
+        "Friday": "Ham & Bean",
+        "Saturday": ""
+      },
+      "Entrée1": {
+        "Sunday": "Steamed Perogies with Butter & Onions",
+        "Monday": "Hot Dogs on a Roll with Toppings",
+        "Tuesday": "Chicken Tenders w/Sauce",
+        "Wednesday": "Beef Stew w/ Biscuit",
+        "Thursday": "Dakgochi Chicken w/Gojuchang Sauce",
+        "Friday": "Today's Catch",
+        "Saturday": "Scrambled Eggs"
+      },
+      "Entrée2": {
+        "Sunday": "Honey Fried Chicken",
+        "Monday": "Caprese Chicken",
+        "Tuesday": "Beef Ravioli",
+        "Wednesday": "Macaroni & Cheese",
+        "Thursday": "Pulled Pork Sandwich",
+        "Friday": "Beef Chimichanga",
+        "Saturday": "Steak Sandwich w/Peppers & Onions"
+      },
+      "Vegan/Vegetarian or Additional Entrée": {
+        "Sunday": "Hard Boiled Eggs & Vegan Scramble",
+        "Monday": "Chef's Vegan Entrée",
+        "Tuesday": "Chef's Vegan Entrée",
+        "Wednesday": "Impossible Burger",
+        "Thursday": "Vegan Chicken Tenders w/ Sauce",
+        "Friday": "Vegetable Protein Nuggets",
+        "Saturday": "Hard Boiled Eggs & Vegan Scramble"
+      },
+      "Grill": {
+        "Sunday": "",
+        "Monday": "Grilled Cheese Sandwich",
+        "Tuesday": "Grilled Cheese Sandwich",
+        "Wednesday": "Grilled Cheese Sandwich",
+        "Thursday": "Grilled Cheese Sandwich",
+        "Friday": "Grilled Cheese Sandwich",
+        "Saturday": "Grilled Cheese Sandwich"
+      },
+      "Starch": {
+        "Sunday": "Sweet Potato Fries",
+        "Monday": "House Made Chips",
+        "Tuesday": "Roasted Red Potatoes",
+        "Wednesday": "Steak Fries",
+        "Thursday": "Tater Tots",
+        "Friday": "Sweet Corn Bread",
+        "Saturday": "Steak Fried Potatoes"
+      },
+      "Veggie1": {
+        "Sunday": "New Brunswick Vegetable Blend",
+        "Monday": "Spinach",
+        "Tuesday": "Sugar Snap Peas",
+        "Wednesday": "Green beans",
+        "Thursday": "Roasted Zucchini Squash",
+        "Friday": "California Vegetable Blend",
+        "Saturday": "Cut Asparagus"
+      },
+      "Veggie2": {
+        "Sunday": "Grits",
+        "Monday": "Grits",
+        "Tuesday": "Grits",
+        "Wednesday": "Grits",
+        "Thursday": "Grits",
+        "Friday": "Grits",
+        "Saturday": "Grits"
+      }
+    }
+  }
+  

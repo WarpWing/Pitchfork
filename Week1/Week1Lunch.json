@@ -1,0 +1,94 @@
+{
+  "Week1Lunch": {
+    "Soup1": {
+      "Sunday": "Hearty Chicken Vegetable",
+      "Monday": "Minestrone w/Beans",
+      "Tuesday": "Cheesy Cream of Asparagus",
+      "Wednesday": "Barley Mushroom",
+      "Thursday": "Ham and Bean",
+      "Friday": "Quinoa Chili",
+      "Saturday": "Hearty Vegetable"
+    },
+    "Soup2": {
+      "Sunday": "New England Clam Chowder",
+      "Monday": "Chicken Corn",
+      "Tuesday": "Cream of Tomato",
+      "Wednesday": "African Peanut",
+      "Thursday": "Seafood Gumbo",
+      "Friday": "Scrambled Eggs",
+      "Saturday": ""
+    },
+    "Entrée1": {
+      "Sunday": "BBQ Chicken Sandwich",
+      "Monday": "Today's Catch",
+      "Tuesday": "Chicken Tenders w/Sauce",
+      "Wednesday": "Hawaiian Ham Slider",
+      "Thursday": "Spicy Boneless Chicken Wings",
+      "Friday": "Beef Ravioli",
+      "Saturday": "Scrambled Eggs"
+    },
+    "Entrée2": {
+      "Sunday": "Smoked Ham Scrambled Eggs",
+      "Monday": "Brisket Tacos",
+      "Tuesday": "Today's Catch",
+      "Wednesday": "Mexican Mollettes Sandwich",
+      "Thursday": "Today's Catch",
+      "Friday": "Beef Stew",
+      "Saturday": "French Toast Sticks"
+    },
+    "Vegan/Vegetarian or Additional Entrée": {
+      "Sunday": "Vegan Scramble",
+      "Monday": "Pica Brown Rice Burger",
+      "Tuesday": "Vegan Chicken Tenders w/Sauce",
+      "Wednesday": "Vegan Burger Mac",
+      "Thursday": "Vegan Moussaka",
+      "Friday": "Vegetable Protein Nuggets",
+      "Saturday": ""
+    },
+    "Grill": {
+      "Sunday": "Falafel w/Tzatziki & Slaw",
+      "Monday": "Sloppy Joe",
+      "Tuesday": "Chicken Fajita with Toppings",
+      "Wednesday": "Beef & Broccoli Stir Fry",
+      "Thursday": "Grilled Chicken Sandwich w/Fontina Aioli",
+      "Friday": "",
+      "Saturday": "Grilled Chicken Breast"
+    },
+    "Starch": {
+      "Sunday": "Tri Taters",
+      "Monday": "Tater Tots",
+      "Tuesday": "Unseasoned Waffle Fries",
+      "Wednesday": "Seasoned Fries",
+      "Thursday": "Steak Fried Potatoes",
+      "Friday": "Tater Tots",
+      "Saturday": "Buttermilk Biscuit"
+    },
+    "Veggie": {
+      "Sunday": "Cut Green Beans",
+      "Monday": "Roasted Broccoli",
+      "Tuesday": "Cut Green Beans",
+      "Wednesday": "Cauliflower Fried Rice",
+      "Thursday": "Roasted Asparagus Spears",
+      "Friday": "Roasted Cauliflower",
+      "Saturday": "Romanesco"
+    },
+    "Veggie2": {
+      "Sunday": "Hard Boiled Eggs & Vegan Scramble",
+      "Monday": "Hard Boiled Eggs & Vegan Scramble",
+      "Tuesday": "Hard Boiled Eggs & Vegan Scramble",
+      "Wednesday": "Hard Boiled Eggs & Vegan Scramble",
+      "Thursday": "White Rice & Asian Veg Blend",
+      "Friday": "Sausage Patty",
+      "Saturday": "Grilled Chicken Breast"
+    },
+    "Additional Item": {
+      "Sunday": "Scrambled Eggs",
+      "Monday": "",
+      "Tuesday": "",
+      "Wednesday": "",
+      "Thursday": "",
+      "Friday": "",
+      "Saturday": "6” Personal Cheese GF Pizza & 16” Round Cheese Pizza"
+    }
+  }
+}
