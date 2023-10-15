@@ -1,0 +1,50 @@
+{
+    "Week4Breakfast": {
+      "Breakfast": {
+        "Sunday Starts with Lunch": {},
+        "Monday": {
+          "Grill": ["Fried Eggs", "Vegan Oatmeal Pancakes"],
+          "Entrée": ["Scrambled Eggs", "Baked Mixed Fruit Compote Crisp", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal-ish"],
+          "Side - Meat": ["Bacon", "Vegan Sausage Patty"],
+          "Side - Starch 2": ["Tri Taters"]
+        },
+        "Tuesday": {
+          "Grill": ["Fried Eggs", "Sun Butter Pancakes"],
+          "Entrée": ["Scrambled Eggs", "Baked Oatmeal", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal"],
+          "Side - Meat": ["Sea Legs"],
+          "Side - Starch 2": []
+        },
+        "Wednesday": {
+          "Grill": ["Fried Eggs", "Breakfast Blueberry Pancakes"],
+          "Entrée": ["Scrambled Eggs", "Amish Breakfast Casserole", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal"],
+          "Side - Meat": ["Sausage Patty"],
+          "Side - Starch 2": ["Tri Taters"]
+        },
+        "Thursday": {
+          "Grill": ["Fried Eggs", "Buttermilk Pancakes"],
+          "Entrée": ["Scrambled Eggs", "Coconut Blueberry Baked Oatmeal", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal"],
+          "Side - Meat": ["Chicken Sausage Patty"],
+          "Side - Starch 2": ["Home Fried Potatoes"]
+        },
+        "Friday": {
+          "Grill": ["Fried Eggs", "Chocolate Chip Pancakes"],
+          "Entrée": ["Scrambled Eggs", "Creamed Dried Beef on a Biscuit", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal"],
+          "Side - Meat": ["Breakfast Sausage Link"],
+          "Side - Starch 2": ["Tater Tots"]
+        },
+        "Saturday": {
+          "Grill": ["Fried Eggs", "French Toast Sticks"],
+          "Entrée": ["Scrambled Eggs", "Baked Oatmeal", "Hard Boiled Eggs & Vegan Scramble"],
+          "Side - Starch": ["Oatmeal"],
+          "Side - Meat": ["Flaked Salmon"],
+          "Side - Starch 2": []
+        }
+      }
+    }
+  }
+  

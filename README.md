@@ -1,5 +1,5 @@
 # Pitchfork
-A Python bot that uses OpenAI's GPT-4V to analyze the Dickinson College Caf menus(Way to make something incredibly hard to parse) and utilizes SMTP + Jinja2 to email daily menus to a select list of people.
+A Python bot that uses OpenAI's GPT-4V to analyze the Dickinson College Caf menus (Way to make something incredibly hard to parse) and utilizes SMTP + Jinja2 to email daily menus to a select list of people. The deployment of Pitchfork is done by setting a cronjob on a remote Linux VM to run every morning at 6:00 AM EST. 
 
 If you would like to be added to this list, please email chermsit@dickinson.edu or message WarpWing#3866 on Discord.
 
