@@ -1,61 +1,61 @@
 {
   "Week2Dinner": {
-    "Entrée1": {
-      "Sunday": "Roast Pork W/ Apple Brandy Sauce",
-      "Monday": "Flat Iron Steak w/ Tomatillo Sauce",
-      "Tuesday": "Roasted Turkey & Gravy with Stuffing",
-      "Wednesday": "Beef Braciole Style",
-      "Thursday": "Swiss Steak",
-      "Friday": "Today's Catch",
-      "Saturday": "Butter Herbed 8 Cut Chicken"
+    "Sunday": {
+      "Entrée1": "Roast Pork W/ Apple Brandy Sauce",
+      "Entrée2": "Salmon w/ Honey Pecan Sauce",
+      "Vegan/Vegetarian or Additional Entrée": "Tempeh & Vegetable Masala",
+      "Grill": "Chipotle Chicken Steak with Charred Corn Salsa",
+      "Starch": "Roasted Garlic & Kale Mashed Potatoes",
+      "Veggie1": "Whole Green Beans"
     },
-    "Entrée2": {
-      "Sunday": "Salmon w/ Honey Pecan Sauce",
-      "Monday": "Hot Wings",
-      "Tuesday": "Breaded Clam Strips",
-      "Wednesday": "Crab & Shrimp Imperial",
-      "Thursday": "Honey Fried Chicken",
-      "Friday": "Grilled Lime Chicken w/ Mango Salsa",
-      "Saturday": "Beef Tacos w/ Toppings"
+    "Monday": {
+      "Entrée1": "Flat Iron Steak w/ Tomatillo Sauce",
+      "Entrée2": "Hot Wings",
+      "Vegan/Vegetarian or Additional Entrée": "Lentil & Sweet Potato Stew",
+      "Grill": "Grilled Fish Taco",
+      "Starch": "Rosemary Roasted Potatoes",
+      "Veggie1": "Peas"
     },
-    "Vegan/Vegetarian or Additional Entrée": {
-      "Sunday": "Tempeh & Vegetable Masala",
-      "Monday": "Lentil & Sweet Potato Stew",
-      "Tuesday": "Vegan Ratatouille",
-      "Wednesday": "Lentil Dhav w/ Cilantro Basmati",
-      "Thursday": "Spicy Tempeh Bulgogi",
-      "Friday": "Falafel Burger",
-      "Saturday": "Vegan Protein Taco"
+    "Tuesday": {
+      "Entrée1": "Roasted Turkey & Gravy with Stuffing",
+      "Entrée2": "Breaded Clam Strips",
+      "Vegan/Vegetarian or Additional Entrée": "Vegan Ratatouille",
+      "Grill": "Grilled Fish Taco",
+      "Starch": "Fresh Mashed Potatoes",
+      "Veggie1": "Corn"
     },
-    "Grill": {
-      "Sunday": "Chipotle Chicken Steak with Charred Corn Salsa",
-      "Monday": "Grilled Fish Taco",
-      "Tuesday": "Grilled Fish Taco",
-      "Wednesday": "Sweet & Sour Chicken with Steamed Rice",
-      "Thursday": "Fettuccini, Smoked Turkey & Peppercorn Sauce",
-      "Friday": "Rib Eye Steak",
-      "Saturday": "Rigatoni with Tomato Vodka Sauce"
+    "Wednesday": {
+      "Entrée1": "Beef Braciole Style",
+      "Entrée2": "Crab & Shrimp Imperial",
+      "Vegan/Vegetarian or Additional Entrée": "Lentil Dhav w/ Cilantro Basmati",
+      "Grill": "Sweet & Sour Chicken with Steamed Rice",
+      "Starch": "Sweet Potato with Whipped Brown Sugar Butter",
+      "Veggie1": "Broccoli Romanesco Blend"
     },
-    "Starch": {
-      "Sunday": "Roasted Garlic & Kale Mashed Potatoes",
-      "Monday": "Rosemary Roasted Potatoes",
-      "Tuesday": "Fresh Mashed Potatoes",
-      "Wednesday": "Sweet Potato with Whipped Brown Sugar Butter",
-      "Thursday": "Tater Tots",
-      "Friday": "Roasted Root Vegetables",
-      "Saturday": "Farm Roasted Potatoes"
+    "Thursday": {
+      "Entrée1": "Swiss Steak",
+      "Entrée2": "Honey Fried Chicken",
+      "Vegan/Vegetarian or Additional Entrée": "Spicy Tempeh Bulgogi",
+      "Grill": "Fettuccini, Smoked Turkey & Peppercorn Sauce",
+      "Starch": "Tater Tots",
+      "Veggie1": "Steamed Baby Carrots"
     },
-    "Veggie1": {
-      "Sunday": "Whole Green Beans",
-      "Monday": "Peas",
-      "Tuesday": "Corn",
-      "Wednesday": "Broccoli Romanesco Blend",
-      "Thursday": "Steamed Baby Carrots",
-      "Friday": "Sugar Snap Peas",
-      "Saturday": "Roasted Broccoli"
+    "Friday": {
+      "Entrée1": "Today's Catch",
+      "Entrée2": "Grilled Lime Chicken w/ Mango Salsa",
+      "Vegan/Vegetarian or Additional Entrée": "Falafel Burger",
+      "Grill": "Rib Eye Steak",
+      "Starch": "Roasted Root Vegetables",
+      "Veggie1": "Sugar Snap Peas"
     },
-    "Veggie2": {
-      "Saturday": "Baby Lima Beans"
+    "Saturday": {
+      "Entrée1": "Butter Herbed 8 Cut Chicken",
+      "Entrée2": "Beef Tacos w/ Toppings",
+      "Vegan/Vegetarian or Additional Entrée": "Vegan Protein Taco",
+      "Grill": "Rigatoni with Tomato Vodka Sauce",
+      "Starch": "Farm Roasted Potatoes",
+      "Veggie1": "Roasted Broccoli",
+      "Veggie2": "Baby Lima Beans"
     }
   }
 }

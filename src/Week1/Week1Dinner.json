@@ -1,68 +1,62 @@
 {
-  "Week1Dinner": {
+  "Week1-Dinner": {
     "Dinner": {
-      "Entrée1": {
-        "Sunday": "Broiled Mesquite Haddock",
-        "Monday": "Chicken Cacciatore",
-        "Tuesday": "Stuffed Chicken Breast w/Broccoli & Cheese",
-        "Wednesday": "Butternut Squash Ravioli w/Ginger",
-        "Thursday": "Lasagna with Meat Sauce",
-        "Friday": "Cajun Butter Steak",
-        "Saturday": "Fresh Catch"
+      "Sunday": {
+        "Entrée1": "Broiled Mesquite Haddock",
+        "Entrée2": "Chicken Cordon Bleu",
+        "Vegan/Vegetarian or Additional Entrée": "Spiced Curried Lentils",
+        "Grill": "Steak Sandwich with Sauteed Peppers & Onions",
+        "Starch": "Roasted Sweet Potatoes",
+        "Veggie1": "California Vegetable Blend"
       },
-      "Entrée2": {
-        "Sunday": "Chicken Cordon Bleu",
-        "Monday": "Salmon Cakes",
-        "Tuesday": "Braised Eye Round of Beef w/Onion Gravy",
-        "Wednesday": "Meatloaf w/Red Wine Glaze",
-        "Thursday": "Fresh Catch",
-        "Friday": "Fresh Catch",
-        "Saturday": "Beef Tacos w/Toppings Bar"
+      "Monday": {
+        "Entrée1": "Chicken Cacciatore",
+        "Entrée2": "Salmon Cakes",
+        "Vegan/Vegetarian or Additional Entrée": "Spicy Tempeh Bulgogi",
+        "Grill": "Flat Iron Steak w/Tomatillo Sauce",
+        "Starch": "Rosemary Garlic Potatoes",
+        "Veggie1": "Sugar Snap Peas",
+        "Veggie2": "New Brunswick Vegetable Blend"
       },
-      "Vegan/Vegetarian or Additional Entrée": {
-        "Sunday": "Spiced Curried Lentils",
-        "Monday": "Spicy Tempeh Bulgogi",
-        "Tuesday": "Falafel w/ Tzatziki and Slaw",
-        "Wednesday": "Pineapple Fried Rice & Tofu",
-        "Thursday": "Jackfruit BBQ",
-        "Friday": "Cauliflower Coconut Vegeball w/Sauce",
-        "Saturday": "Vegan Protein Taco"
+      "Tuesday": {
+        "Entrée1": "Stuffed Chicken Breast w/Broccoli & Cheese",
+        "Entrée2": "Braised Eye Round of Beef w/Onion Gravy",
+        "Vegan/Vegetarian or Additional Entrée": "Falafel w/ Tzatziki and Slaw",
+        "Grill": "Vegan Pad Thai",
+        "Starch": "Vegan Fresh Mashed Potatoes",
+        "Veggie1": "Corn",
+        "Veggie2": "Sugar Snap Peas"
       },
-      "Grill": {
-        "Sunday": "Steak Sandwich with Sauteed Peppers & Onions",
-        "Monday": "Flat Iron Steak w/Tomatillo Sauce",
-        "Tuesday": "Vegan Pad Thai",
-        "Wednesday": "",
-        "Thursday": "Miso Glazed Cod",
-        "Friday": "",
-        "Saturday": "Chicken Francese"
+      "Wednesday": {
+        "Entrée1": "Butternut Squash Ravioli w/Ginger",
+        "Entrée2": "Meatloaf w/Red Wine Glaze",
+        "Vegan/Vegetarian or Additional Entrée": "Pineapple Fried Rice & Tofu",
+        "Starch": "Scalloped Potatoes",
+        "Veggie1": "Roasted Garlic Zucchini"
       },
-      "Starch": {
-        "Sunday": "Roasted Sweet Potatoes",
-        "Monday": "Rosemary Garlic Potatoes",
-        "Tuesday": "Vegan Fresh Mashed Potatoes",
-        "Wednesday": "Scalloped Potatoes",
-        "Thursday": "Farm Roasted Potatoes",
-        "Friday": "Roasted Yukon Gold Potatoes",
-        "Saturday": "Spanish Rice"
+      "Thursday": {
+        "Entrée1": "Lasagna with Meat Sauce",
+        "Entrée2": "Fresh Catch",
+        "Vegan/Vegetarian or Additional Entrée": "Jackfruit BBQ",
+        "Grill": "Miso Glazed Cod",
+        "Starch": "Farm Roasted Potatoes",
+        "Veggie1": "Peas",
+        "Veggie2": "Roasted Cauliflower"
       },
-      "Veggie1": {
-        "Sunday": "California Vegetable Blend",
-        "Monday": "Sugar Snap Peas",
-        "Tuesday": "Corn",
-        "Wednesday": "Roasted Garlic Zucchini",
-        "Thursday": "Peas",
-        "Friday": "Lemon Parmesan Brussel Sprouts",
-        "Saturday": "Baby Carrots"
+      "Friday": {
+        "Entrée1": "Cajun Butter Steak",
+        "Entrée2": "Fresh Catch",
+        "Vegan/Vegetarian or Additional Entrée": "Cauliflower Coconut Vegeball w/Sauce",
+        "Starch": "Roasted Yukon Gold Potatoes",
+        "Veggie1": "Lemon Parmesan Brussel Sprouts"
       },
-      "Veggie2": {
-        "Sunday": "",
-        "Monday": "New Brunswick Vegetable Blend",
-        "Tuesday": "Sugar Snap Peas",
-        "Wednesday": "",
-        "Thursday": "Roasted Cauliflower",
-        "Friday": "",
-        "Saturday": ""
+      "Saturday": {
+        "Entrée1": "Fresh Catch",
+        "Entrée2": "Beef Tacos w/Toppings Bar",
+        "Vegan/Vegetarian or Additional Entrée": "Vegan Protein Taco",
+        "Grill": "Chicken Francese",
+        "Starch": "Spanish Rice",
+        "Veggie1": "Baby Carrots"
       }
     }
   }

@@ -1,74 +1,69 @@
 {
-  "Week1Breakfast": {
-    "Grill": {
-      "Sunday": "Served at Sunday Lunch",
-      "Monday": "Fried Eggs",
-      "Tuesday": "Fried Eggs",
-      "Wednesday": "Fried Eggs",
-      "Thursday": "Fried Eggs",
-      "Friday": "Fried Eggs",
-      "Saturday": "Fried Eggs"
-    },
-    "Grill2": {
-      "Monday": "Blueberry Pancakes",
-      "Tuesday": "Chocolate Chip Pancakes",
-      "Wednesday": "French Toast",
-      "Thursday": "Buttermilk Pancakes",
-      "Friday": "French Toast Sticks",
-      "Saturday": "Vegan Oatmeal Pancakes"
-    },
-    "Entrée1": {
-      "Monday": "Scrambled Eggs",
-      "Tuesday": "Scrambled Eggs",
-      "Wednesday": "Scrambled Eggs",
-      "Thursday": "Scrambled Eggs",
-      "Friday": "Scrambled Eggs",
-      "Saturday": "Scrambled Eggs"
-    },
-    "Entrée2": {
-      "Monday": "Omelette Casserole",
-      "Tuesday": "16\" Breakfast Pizza",
-      "Wednesday": "Baked Oatmeal",
-      "Thursday": "Baked Oatmeal",
-      "Friday": "Coconut Blueberry Baked Oatmeal",
-      "Saturday": "Amish Breakfast Casserole"
-    },
-    "Entrée3": {
-      "Saturday": "Surimi"
-    },
-    "Hard Boiled Eggs & Vegan Scramble": {
-      "Sunday": "Hard Boiled Eggs & Vegan Scramble",
-      "Monday": "Hard Boiled Eggs & Vegan Scramble",
-      "Tuesday": "Hard Boiled Eggs & Vegan Scramble",
-      "Wednesday": "Hard Boiled Eggs & Vegan Scramble",
-      "Thursday": "Hard Boiled Eggs & Vegan Scramble",
-      "Friday": "Hard Boiled Eggs & Vegan Scramble",
-      "Saturday": "Hard Boiled Eggs & Vegan Scramble"
-    },
-    "Oatmeal-ish": {
-      "Sunday": "Oatmeal-ish",
-      "Monday": "Oatmeal",
-      "Tuesday": "Oatmeal",
-      "Wednesday": "Oatmeal",
-      "Thursday": "Oatmeal",
-      "Friday": "Oatmeal",
-      "Saturday": "Oatmeal"
-    },
-    "Side - Meat": {
-      "Monday": "Vegan Sausage Patty",
-      "Tuesday": "White Fish",
-      "Wednesday": "Chicken Sausage Patty",
-      "Thursday": "Breakfast Link Sausage",
-      "Friday": "Fresh Link Sausage",
-      "Saturday": "Vegan Sausage Patty"
-    },
-    "Side - Starch": {
-      "Monday": "Home Fried Potatoes",
-      "Tuesday": "",
-      "Wednesday": "Baby Potato Cakes",
-      "Thursday": "Homemade Hash Browns",
-      "Friday": "",
-      "Saturday": ""
+  "Week1-Breakfast": {
+    "Breakfast": {
+      "Sunday": {
+        "Grill1": "Served at Sunday Lunch",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal-ish"
+      },
+      "Monday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Blueberry Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Omelette Casserole",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Vegan Sausage Patty",
+        "Side - Starch": "Home Fried Potatoes"
+      },
+      "Tuesday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Chocolate Chip Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "16\" Breakfast Pizza",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "White Fish"
+      },
+      "Wednesday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "French Toast",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Chicken Sausage Patty",
+        "Side - Starch": "Baby Potato Cakes"
+      },
+      "Thursday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Buttermilk Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Breakfast Link Sausage",
+        "Side - Starch": "Homemade Hash Browns"
+      },
+      "Friday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "French Toast Sticks",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Coconut Blueberry Baked Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Fresh Link Sausage"
+      },
+      "Saturday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Vegan Oatmeal Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Amish Breakfast Casserole",
+        "Entrée3": "Surimi",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Vegan Sausage Patty"
+      }
     }
   }
 }
