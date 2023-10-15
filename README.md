@@ -5,7 +5,7 @@ If you want to be added to this list, please email chermsit@dickinson.edu or mes
 
 In addition, due to a lack of motivation, I've only included the basic dishes for the mainline. Outside of that, there are no updates for KOVE, Grains Bar, Grains Bar Sauce, Speciality Salad, Chef's Cold Plate or Deli Sandwich of the Day. If you're interested in helping to implement them, please feel free to submit a pull request or discuss them with me on GitHub Issues!
 
-#To-Do List
+# To-Do List
 
 - [x] Finalized Raw Data from GPT4V
 - [ ] Keep data scheme consistent(Non Priority) (Eg. instead of Grill1, Grill2, do Grill: [])
