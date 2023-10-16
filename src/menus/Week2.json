@@ -1,0 +1,204 @@
+{
+  "Week2": {
+    "Breakfast": {
+      "Monday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "French Toast",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Mixed Fruit Compote Crisp",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Bacon",
+        "Side - Starch": "Tri Taters"
+      },
+      "Tuesday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Sun Butter Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Flaked Tuna",
+        "Side - Starch": "Breakfast Pizza"
+      },
+      "Wednesday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Chocolate Chip Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Amish Breakfast Casserole",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Sausage Patty",
+        "Side - Starch": "Home Fried Potatoes"
+      },
+      "Thursday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Buttermilk Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Sausage Gravy w/Baked Buttermilk Biscuit",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Smoked Ham",
+        "Side - Starch": "Tri Taters"
+      },
+      "Friday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "Vegan Oatmeal Pancakes",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Coconut Blueberry Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "Chicken Sausage Patty & Vegan Sausage Patty",
+        "Side - Starch": "Home Fried Potatoes"
+      },
+      "Saturday": {
+        "Grill1": "Fried Eggs",
+        "Grill2": "French Toast Sticks",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Baked Oatmeal",
+        "Vegan Scramble": "Hard Boiled Eggs & Vegan Scramble",
+        "Oatmeal-ish": "Oatmeal",
+        "Side - Meat": "White Fish",
+        "Side - Starch": "Breakfast Pizza"
+      }
+    },
+    "Week2": {
+      "Sunday": {
+        "Soup1": "Mexican Tomato Potato Soup",
+        "Soup2": "",
+        "Entrée1": "Steamed Perogies with Butter & Onions",
+        "Entrée2": "Honey Fried Chicken",
+        "Vegan/Vegetarian or Additional Entrée": "Hard Boiled Eggs & Vegan Scramble",
+        "Grill": "",
+        "Starch": "Sweet Potato Fries",
+        "Veggie1": "New Brunswick Vegetable Blend",
+        "Veggie2": "Grits"
+      },
+      "Monday": {
+        "Soup1": "Lemon Dill Chicken & Rice Soup",
+        "Soup2": "Cream of Tomato Soup",
+        "Entrée1": "Hot Dogs on a Roll with Toppings",
+        "Entrée2": "Caprese Chicken",
+        "Vegan/Vegetarian or Additional Entrée": "Chef's Vegan Entrée",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "House Made Chips",
+        "Veggie1": "Spinach",
+        "Veggie2": "Grits"
+      },
+      "Tuesday": {
+        "Soup1": "Tomato & Cannellini Bean Soup",
+        "Soup2": "Stuffed Pepper Soup",
+        "Entrée1": "Chicken Tenders w/Sauce",
+        "Entrée2": "Beef Ravioli",
+        "Vegan/Vegetarian or Additional Entrée": "Chef's Vegan Entrée",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "Roasted Red Potatoes",
+        "Veggie1": "Sugar Snap Peas",
+        "Veggie2": "Grits"
+      },
+      "Wednesday": {
+        "Soup1": "Minestrone w/Beans Soup",
+        "Soup2": "Shrimp & Corn Bisque",
+        "Entrée1": "Beef Stew w/ Biscuit",
+        "Entrée2": "Macaroni & Cheese",
+        "Vegan/Vegetarian or Additional Entrée": "Impossible Burger",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "Steak Fries",
+        "Veggie1": "Green beans",
+        "Veggie2": "Grits"
+      },
+      "Thursday": {
+        "Soup1": "Pasta & Chickpea Soup",
+        "Soup2": "Tortilla & Smoked Turkey Soup",
+        "Entrée1": "Dakgochi Chicken w/Gojuchang Sauce",
+        "Entrée2": "Pulled Pork Sandwich",
+        "Vegan/Vegetarian or Additional Entrée": "Vegan Chicken Tenders w/ Sauce",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "Tater Tots",
+        "Veggie1": "Roasted Zucchini Squash",
+        "Veggie2": "Grits"
+      },
+      "Friday": {
+        "Soup1": "Pasta Fagioli Soup",
+        "Soup2": "Ham & Bean",
+        "Entrée1": "Today's Catch",
+        "Entrée2": "Beef Chimichanga",
+        "Vegan/Vegetarian or Additional Entrée": "Vegetable Protein Nuggets",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "Sweet Corn Bread",
+        "Veggie1": "California Vegetable Blend",
+        "Veggie2": "Grits"
+      },
+      "Saturday": {
+        "Soup1": "Vegetable Rice Soup",
+        "Soup2": "",
+        "Entrée1": "Scrambled Eggs",
+        "Entrée2": "Steak Sandwich w/Peppers & Onions",
+        "Vegan/Vegetarian or Additional Entrée": "Hard Boiled Eggs & Vegan Scramble",
+        "Grill": "Grilled Cheese Sandwich",
+        "Starch": "Steak Fried Potatoes",
+        "Veggie1": "Cut Asparagus",
+        "Veggie2": "Grits"
+      }
+    },
+    "Dinner": {
+      "Sunday": {
+        "Entrée1": "Roast Pork W/ Apple Brandy Sauce",
+        "Entrée2": "Salmon w/ Honey Pecan Sauce",
+        "Vegan/Vegetarian or Additional Entrée": "Tempeh & Vegetable Masala",
+        "Grill": "Chipotle Chicken Steak with Charred Corn Salsa",
+        "Starch": "Roasted Garlic & Kale Mashed Potatoes",
+        "Veggie1": "Whole Green Beans"
+      },
+      "Monday": {
+        "Entrée1": "Flat Iron Steak w/ Tomatillo Sauce",
+        "Entrée2": "Hot Wings",
+        "Vegan/Vegetarian or Additional Entrée": "Lentil & Sweet Potato Stew",
+        "Grill": "Grilled Fish Taco",
+        "Starch": "Rosemary Roasted Potatoes",
+        "Veggie1": "Peas"
+      },
+      "Tuesday": {
+        "Entrée1": "Roasted Turkey & Gravy with Stuffing",
+        "Entrée2": "Breaded Clam Strips",
+        "Vegan/Vegetarian or Additional Entrée": "Vegan Ratatouille",
+        "Grill": "Grilled Fish Taco",
+        "Starch": "Fresh Mashed Potatoes",
+        "Veggie1": "Corn"
+      },
+      "Wednesday": {
+        "Entrée1": "Beef Braciole Style",
+        "Entrée2": "Crab & Shrimp Imperial",
+        "Vegan/Vegetarian or Additional Entrée": "Lentil Dhav w/ Cilantro Basmati",
+        "Grill": "Sweet & Sour Chicken with Steamed Rice",
+        "Starch": "Sweet Potato with Whipped Brown Sugar Butter",
+        "Veggie1": "Broccoli Romanesco Blend"
+      },
+      "Thursday": {
+        "Entrée1": "Swiss Steak",
+        "Entrée2": "Honey Fried Chicken",
+        "Vegan/Vegetarian or Additional Entrée": "Spicy Tempeh Bulgogi",
+        "Grill": "Fettuccini, Smoked Turkey & Peppercorn Sauce",
+        "Starch": "Tater Tots",
+        "Veggie1": "Steamed Baby Carrots"
+      },
+      "Friday": {
+        "Entrée1": "Today's Catch",
+        "Entrée2": "Grilled Lime Chicken w/ Mango Salsa",
+        "Vegan/Vegetarian or Additional Entrée": "Falafel Burger",
+        "Grill": "Rib Eye Steak",
+        "Starch": "Roasted Root Vegetables",
+        "Veggie1": "Sugar Snap Peas"
+      },
+      "Saturday": {
+        "Entrée1": "Butter Herbed 8 Cut Chicken",
+        "Entrée2": "Beef Tacos w/ Toppings",
+        "Vegan/Vegetarian or Additional Entrée": "Vegan Protein Taco",
+        "Grill": "Rigatoni with Tomato Vodka Sauce",
+        "Starch": "Farm Roasted Potatoes",
+        "Veggie1": "Roasted Broccoli",
+        "Veggie2": "Baby Lima Beans"
+      }
+    }
+  }
+}
