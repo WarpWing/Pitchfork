@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* White background */
+            margin: 0;
+            padding: 0;
+        }
+        .red-banner {
+            background-color: red; /* Red banner */
+            position: fixed; /* Fixed position */
+            top: 0; /* At the top */
+            width: 100%; /* Full width */
+            padding: 20px;
+            text-align: center; /* Text aligned to center */
+            z-index: 1000; /* High z-index to ensure it stays on top */
+        }
+        .main-content {
+            margin-top: 60px; /* Push down content below fixed banner */
+            padding: 20px;
+            text-align: center; /* Text aligned to center */
+            color: black; /* Black text color */
+            font-weight: bold; /* Bold text */
+        }
+        
+        /* Media queries for desktop */
+        @media only screen and (min-width: 768px) {
+            .main-content {
+                width: 80%; /* 80% width on desktop */
+                margin: 60px auto; /* Centered on desktop */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="red-banner">
+        <p>Dickinson Pitchfork</p>
+    </div>
+    <div class="main-content">
+        <p>Hello {{ recipient_name }},</p>
+        <p>{{ message_body }}</p>
+        <p>Best regards,</p>
+        <p>Your Name</p>
+    </div>
+</body>
+</html>
