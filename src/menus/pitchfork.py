@@ -52,7 +52,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     if to_email == 'wonge@dickinson.edu':
         greeting = f"BING CHILLING {recipient_name}, BING CHILLING BING CHILLING BING CHILLING \n\n"
     else:
-        greeting = f"Hello {recipient_name}, here is the menu for {datetime.now().strftime('%A')} \n\n"
+        greeting = f"Hello {recipient_name}! Here is the menu for {datetime.now().strftime('%A')}. Please make sure to check in person for dietary restrictions and special needs. \n\n"
     message_body = greeting + message_body
 
 
@@ -82,6 +82,6 @@ def send_test_emails():
     print(f"Sending email to {mail_list[0][1]} at {mail_list[0][0]}...")
     send_email(find_week(), menu_text, mail_list[0][0], mail_list[0][1])
 
-send_test_emails()
+#send_test_emails()
 # Uncomment the next line to send to all emails
-# send_emails()
+send_emails()
