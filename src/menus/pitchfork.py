@@ -1,6 +1,7 @@
 import smtplib
 import os
 import json
+import requests
 from datetime import datetime
 import csv
 from email.mime.text import MIMEText
@@ -45,6 +46,55 @@ def read_json_menu():
 
     return formatted_menu
 
+def send_discord_webhook(menu_text):
+    webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+    if not webhook_url:
+        print("The webhook URL is not set. Please check your environment variables.")
+        return
+
+    sections = menu_text.split('\n\n')
+    embeds = []
+    author = {
+        "name": "Pitchfork Menu Bot",
+        "url": "https://github.com/WarpWing/Pitchfork",
+        "icon_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png"
+    }
+
+    for section in sections:
+        meal_type, items = section.split(':\n', 1)
+        fields = []  
+        for item in items.split('\n'):
+            if item:
+                if ': ' not in item:
+                    continue
+                dish, description = item.split(': ')
+                fields.append({
+                    "name": dish,
+                    "value": description,
+                    "inline": True
+                })
+        embed = {
+            "author": author,
+            "title": meal_type,  
+            "fields": fields,
+            "color": 15258703,
+        }
+        embeds.append(embed)  
+
+    payload = {
+        "username": "Pitchfork Menu Bot",
+        "avatar_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png",
+        "content": f"Here is the menu for {datetime.now().strftime('%A')}",
+        "embeds": embeds
+    }
+
+    response = requests.post(webhook_url, json=payload)
+    if response.status_code == 204:
+        print("Webhook sent successfully!")
+    else:
+        print(f"Failed to send webhook with status code: {response.status_code}")
+
+
 def send_email(subject, message_body, to_email, recipient_name):
     gmail_user = os.getenv('GMAIL_USER')
     gmail_password = os.getenv('GMAIL_PASSWORD')
@@ -84,4 +134,8 @@ def send_test_emails():
 
 #send_test_emails()
 # Uncomment the next line to send to all emails
-send_emails()
+#send_emails()
+
+#Discord Webhook stuff
+menu_text = read_json_menu()
+send_discord_webhook(menu_text)
