@@ -26,25 +26,60 @@ def find_week():
     return "Week not found"
 
 def read_json_menu():
-    
     current_week = find_week().replace(" ", "")
-    current_day = datetime.now().strftime('%A')  
+    current_day = datetime.now().strftime('%A')
 
     with open(f"src/menus/{current_week}.json", "r", encoding='utf-8') as f:
-        week_menu = json.load(f)[current_week]
+        data = json.load(f)
 
     formatted_menu = ""
 
-    for meal in ['Breakfast', 'Lunch', 'Dinner']:
-        formatted_menu += f"{meal}:\n"
-        day_menu = week_menu.get(meal, {}).get(current_day, {})
-        
-        for dish, description in day_menu.items():
+    if current_week in data:
+        week_menu = data[current_week]
+
+        formatted_menu += f"Breakfast:\n"
+        breakfast_menu = week_menu.get('Breakfast', {}).get(current_day, {})
+        for dish, description in breakfast_menu.items():
             if isinstance(description, list):
                 description = ', '.join(description)
             formatted_menu += f"  {dish}: {description}\n"
 
+        formatted_menu += "Lunch:\n"
+        if current_week in ['Week2', 'Week3']:
+            lunch_menu = data['Week2'][current_week].get(current_day, {})
+        else:
+            lunch_menu = week_menu.get('Lunch', {}).get(current_day, {})
+        for dish, description in lunch_menu.items():
+            if isinstance(description, list):
+                description = ', '.join(description)
+            formatted_menu += f"  {dish}: {description}\n"
+
+        formatted_menu += f"Dinner:\n"
+        dinner_menu = week_menu.get('Dinner', {}).get(current_day, {})
+        for dish, description in dinner_menu.items():
+            if isinstance(description, list):
+                description = ', '.join(description)
+            formatted_menu += f"  {dish}: {description}\n"
+    else:
+        for meal in ['Breakfast', 'Dinner']:
+            formatted_menu += f"{meal}:\n"
+            day_menu = data.get(meal, {}).get(current_day, {})
+            for dish, description in day_menu.items():
+                if isinstance(description, list):
+                    description = ', '.join(description)
+                formatted_menu += f"  {dish}: {description}\n"
+                
+        if 'Week2' in data and current_week in data['Week2']:
+            formatted_menu += "Lunch:\n"
+            lunch_menu = data['Week2'][current_week].get(current_day, {})
+            for dish, description in lunch_menu.items():
+                if isinstance(description, list):
+                    description = ', '.join(description)
+                formatted_menu += f"  {dish}: {description}\n"
+
     return formatted_menu
+
+
 
 def send_discord_webhook(menu_text):
     webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
@@ -134,8 +169,8 @@ def send_test_emails():
 
 #send_test_emails()
 # Uncomment the next line to send to all emails
-#send_emails()
+send_emails()
 
 #Discord Webhook stuff
-menu_text = read_json_menu()
-send_discord_webhook(menu_text)
+#menu_text = read_json_menu()
+#send_discord_webhook(menu_text)
