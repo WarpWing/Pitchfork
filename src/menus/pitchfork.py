@@ -68,7 +68,7 @@ def read_json_menu():
                 if isinstance(description, list):
                     description = ', '.join(description)
                 formatted_menu += f"  {dish}: {description}\n"
-                
+
         if 'Week2' in data and current_week in data['Week2']:
             formatted_menu += "Lunch:\n"
             lunch_menu = data['Week2'][current_week].get(current_day, {})
@@ -154,7 +154,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'], ['wonge@dickinson.edu', 'Evan Wong'],['kimbo@dickinson.edu','Boosung Kim']]
+mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'], ['wonge@dickinson.edu', 'Evan Wong'],['kimbo@dickinson.edu','Boosung Kim'],["Supasinee Siripun",'siripuns@dickinson.edu']]
 
 def send_emails():
     menu_text = read_json_menu()
