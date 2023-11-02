@@ -15,7 +15,9 @@ In addition, due to a lack of motivation, I've only included the basic dishes fo
 # Contributors
 [Ty Chermsirivatana '27](https://github.com/WarpWing) - Initial Work
 
+<sup><sub>[Evan Wong '24](https://github.com/evanwong1020) - Added Song Lyrics</sub></sup>
+
 # Acknowledgements 
 [Boosung Kim '25](https://github.com/boosungkim) - For his work on his own Dickinson Menu Bot which inspired this project.
 
-[Evan Wong '24](https://github.com/evanwong1020) - For pushing me actually to create my own Bot instead of complaining.
+
