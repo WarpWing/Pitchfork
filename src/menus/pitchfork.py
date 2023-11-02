@@ -137,7 +137,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     if to_email == 'wonge@dickinson.edu':
         greeting = f"BING CHILLING {recipient_name}, BING CHILLING BING CHILLING BING CHILLING \n\n"
     elif to_email == 'siripuns@dickinson.edu':
-        greeting = f"IM SUPA SHY IM SUPA SHY {recipient_name}, IM SUPA SHYYYYYYYYYYYYYYYYYYYYY \n\n"
+        greeting = f"IM SUPASHY SUPASHY {recipient_name}, BUT WAIT A MINUTE WHILE I MAKE YOU MINE MAKE YOU MINEE IM SUPASHYYYYYYYYYYYYYYYYYYYYY \n\n"
     else:
         greeting = f"Hello {recipient_name}! Here is the menu for {datetime.now().strftime('%A')}. Please make sure to check in person for dietary restrictions and special needs. \n\n"
     message_body = greeting + message_body
