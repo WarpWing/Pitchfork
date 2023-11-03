@@ -27,4 +27,3 @@ jobs:
          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python src/menus/pitchfork.py
-
