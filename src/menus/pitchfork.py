@@ -77,8 +77,8 @@ def read_json_menu():
 
     return formatted_menu
 
-def send_discord_webhook(menu_text):
-    webhook_url = 'https://discord.com/api/webhooks/1166241460807540846/n_5j03tqJAN4pdeG_DnY9XxspZWl_-n-c7g_8Repk7A5boxeIBxXh33STCstenv9yqbV'
+def send_discord_webhook(menu_text): 
+    webhook_url = os.environ['DISCORD_WEBHOOK_URL']
     if not webhook_url:
         print("The webhook URL is not set. Please check your environment variables.")
         return
@@ -114,7 +114,7 @@ def send_discord_webhook(menu_text):
 
         response = requests.post(webhook_url, json=payload)
         if response.status_code == 204:
-            print(f"Webhook sent successfully for {meal_type}!")
+            print(f"Webhook sent successfully for {datetime.now()}!")
         else:
             print(f"Failed to send webhook for {meal_type} with status code: {response.status_code}")
         
@@ -163,5 +163,5 @@ def send_test_emails():
 send_emails()
 
 #Discord Webhook stuff
-#menu_text = read_json_menu()
-#send_discord_webhook(menu_text)
+menu_text = read_json_menu()
+send_discord_webhook(menu_text)
