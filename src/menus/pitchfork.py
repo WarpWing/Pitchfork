@@ -77,52 +77,6 @@ def read_json_menu():
 
     return formatted_menu
 
-def send_discord_webhook(menu_text):
-    webhook_url = 'https://discord.com/api/webhooks/1166241460807540846/n_5j03tqJAN4pdeG_DnY9XxspZWl_-n-c7g_8Repk7A5boxeIBxXh33STCstenv9yqbV'
-    if not webhook_url:
-        print("The webhook URL is not set. Please check your environment variables.")
-        return
-
-    sections = menu_text.split('\n\n')
-    author = {
-        "name": "Pitchfork Menu Bot",
-        "url": "https://github.com/WarpWing/Pitchfork",
-        "icon_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png"
-    }
-
-    for section in sections:
-        meal_type, items = section.split(':\n', 1)
-        table_content = '```'  # Triple backticks to start a code block for monospaced font
-        for item in items.split('\n'):
-            if item:
-                dish, description = item.split(': ')
-                table_content += f"\n{dish: <20} {description}"  # Text alignment to create a table-like format
-        table_content += '```'  # Triple backticks to end the code block
-
-        embed = {
-            "author": author,
-            "title": f"**{meal_type}:**",  # Making meal_type bold using Markdown
-            "fields": [{
-                "name": meal_type,
-                "value": table_content,
-                "inline": False
-            }],
-            "color": 3447003,
-        }
-
-        payload = {
-            "username": "Pitchfork Menu Bot",
-            "avatar_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png",
-            "content": f"Here is the menu for {datetime.now().strftime('%A')}",
-            "embeds": [embed]  # Embed for each meal_type
-        }
-
-        response = requests.post(webhook_url, json=payload)
-        if response.status_code == 204:
-            print(f"Webhook sent successfully for {meal_type}!")
-        else:
-            print(f"Failed to send webhook for {meal_type} with status code: {response.status_code}")
-
 
 def send_email(subject, message_body, to_email, recipient_name):
     gmail_user = os.environ['GMAIL_USER']
