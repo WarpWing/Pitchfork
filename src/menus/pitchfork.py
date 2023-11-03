@@ -5,13 +5,11 @@ import requests
 from datetime import datetime
 import csv
 from email.mime.text import MIMEText
-from dotenv import load_dotenv
 
-load_dotenv()
 
 def find_week():
     today = datetime.now()
-    with open('src/schedule.csv', 'r') as csvfile:
+    with open('../schedule.csv', 'r') as csvfile:
         rows = list(csv.DictReader(csvfile))
         for i in range(len(rows)):
             start_date_str = rows[i]['Date']
@@ -29,7 +27,7 @@ def read_json_menu():
     current_week = find_week().replace(" ", "")
     current_day = datetime.now().strftime('%A')
 
-    with open(f"src/menus/{current_week}.json", "r", encoding='utf-8') as f:
+    with open(f"{current_week}.json", "r", encoding='utf-8') as f:
         data = json.load(f)
 
     formatted_menu = ""
@@ -82,7 +80,7 @@ def read_json_menu():
 
 
 def send_discord_webhook(menu_text):
-    webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+    webhook_url = os.environ['DISCORD_WEBHOOK_URL']
     if not webhook_url:
         print("The webhook URL is not set. Please check your environment variables.")
         return
@@ -97,7 +95,7 @@ def send_discord_webhook(menu_text):
 
     for section in sections:
         meal_type, items = section.split(':\n', 1)
-        fields = []  
+        fields = []
         for item in items.split('\n'):
             if item:
                 if ': ' not in item:
@@ -110,11 +108,11 @@ def send_discord_webhook(menu_text):
                 })
         embed = {
             "author": author,
-            "title": meal_type,  
+            "title": meal_type,
             "fields": fields,
             "color": 15258703,
         }
-        embeds.append(embed)  
+        embeds.append(embed)
 
     payload = {
         "username": "Pitchfork Menu Bot",
@@ -131,9 +129,9 @@ def send_discord_webhook(menu_text):
 
 
 def send_email(subject, message_body, to_email, recipient_name):
-    gmail_user = os.getenv('GMAIL_USER')
-    gmail_password = os.getenv('GMAIL_PASSWORD')
-    
+    gmail_user = os.environ['GMAIL_USER']
+    gmail_password = os.environ['GMAIL_PASSWORD']
+
     if to_email == 'wonge@dickinson.edu':
         greeting = f"BING CHILLING {recipient_name}, BING CHILLING BING CHILLING BING CHILLING \n\n"
     elif to_email == 'siripuns@dickinson.edu':
