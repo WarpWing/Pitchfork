@@ -27,7 +27,7 @@ def read_json_menu():
     current_week = find_week().replace(" ", "")
     current_day = datetime.now().strftime('%A')
 
-    with open(f"src\menus\{current_week}.json", "r", encoding='utf-8') as f:
+    with open(os.path.join('src', 'menus', f'{current_week}.json'), "r", encoding='utf-8') as f:
         data = json.load(f)
 
     formatted_menu = ""
