@@ -158,9 +158,9 @@ def send_test_emails():
     print(f"Sending email to {mail_list[0][1]} at {mail_list[0][0]}...")
     send_email(find_week(), menu_text, mail_list[0][0], mail_list[0][1])
 
-send_test_emails()
+#send_test_emails()
 # Uncomment the next line to send to all emails
-#send_emails()
+send_emails()
 
 #Discord Webhook stuff
 #menu_text = read_json_menu()
