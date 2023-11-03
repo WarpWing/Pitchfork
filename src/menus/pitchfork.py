@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 
 def find_week():
     today = datetime.now()
-    with open('/home/runner/work/Pitchfork/Pitchfork/src/menus/schedule.csv', 'r') as csvfile:
+    with open('src\schedule.csv', 'r') as csvfile:
         rows = list(csv.DictReader(csvfile))
         for i in range(len(rows)):
             start_date_str = rows[i]['Date']
@@ -27,7 +27,7 @@ def read_json_menu():
     current_week = find_week().replace(" ", "")
     current_day = datetime.now().strftime('%A')
 
-    with open(f"{current_week}.json", "r", encoding='utf-8') as f:
+    with open(f"src\menus\{current_week}.json", "r", encoding='utf-8') as f:
         data = json.load(f)
 
     formatted_menu = ""
