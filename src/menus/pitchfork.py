@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 
 def find_week():
     today = datetime.now()
-    with open('src\schedule.csv', 'r') as csvfile:
+    with open(os.path.join('src', 'schedule.csv'), 'r') as csvfile:
         rows = list(csv.DictReader(csvfile))
         for i in range(len(rows)):
             start_date_str = rows[i]['Date']
