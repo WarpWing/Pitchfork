@@ -154,7 +154,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'], ['wonge@dickinson.edu', 'Evan Wong'],['kimbo@dickinson.edu','Boosung Kim'],['siripuns@dickinson.edu','Supasinee Siripun']]
+mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'], ['wonge@dickinson.edu', 'Evan Wong'],['kimbo@dickinson.edu','Boosung Kim'],['siripuns@dickinson.edu','Supasinee Siripun'],['gonzalec@dickinson.edu','Chris Gonzalez']
 
 def send_emails():
     menu_text = read_json_menu()
