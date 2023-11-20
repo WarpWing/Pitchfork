@@ -1,11 +1,13 @@
 import smtplib
 import os
-import json
+import time
 import requests
-from datetime import datetime
 import csv
+from datetime import datetime
 from email.mime.text import MIMEText
-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
 def find_week():
     today = datetime.now()
@@ -23,59 +25,45 @@ def find_week():
                 return rows[i]['Week']
     return "Week not found"
 
-def read_json_menu():
-    current_week = find_week().replace(" ", "")
-    current_day = datetime.now().strftime('%A')
+def get_menu_from_website():
+    url = 'https://www.dickinson.edu/info/20205/campus_dining/4425/dining_menus'
 
-    with open(os.path.join('src', 'menus', f'{current_week}.json'), "r", encoding='utf-8') as f:
-        data = json.load(f)
+    # Configure Chrome options for headless mode
+    options = Options()
+    options.add_argument("--headless")  # Explicitly add headless argument
+    options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
+    options.add_argument("--no-sandbox")  # Bypass OS security model
+    options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
 
-    formatted_menu = ""
+    driver = webdriver.Chrome(options=options)  # Ensure the path to chromedriver is correctly set
 
-    if current_week in data:
-        week_menu = data[current_week]
+    menu_data = ""
 
-        formatted_menu += f"Breakfast:\n"
-        breakfast_menu = week_menu.get('Breakfast', {}).get(current_day, {})
-        for dish, description in breakfast_menu.items():
-            if isinstance(description, list):
-                description = ', '.join(description)
-            formatted_menu += f"  {dish}: {description}\n"
+    try:
+        driver.get(url)
+        time.sleep(5)  # Adjust based on the page load time
 
-        formatted_menu += "Lunch:\n"
-        if current_week in ['Week2', 'Week3']:
-            lunch_menu = data['Week2'][current_week].get(current_day, {})
-        else:
-            lunch_menu = week_menu.get('Lunch', {}).get(current_day, {})
-        for dish, description in lunch_menu.items():
-            if isinstance(description, list):
-                description = ', '.join(description)
-            formatted_menu += f"  {dish}: {description}\n"
+        # Find all menu item elements for each meal type
+        meals = ['Breakfast', 'Lunch', 'Dinner']
+        for meal in meals:
+            menu_data += f"Menu for {meal}:\n"
+            xpath = f"//h3[contains(text(), '{meal}')]/following-sibling::div//li[@ng-repeat='item in category.ITEMS']"
+            menu_items = driver.find_elements(By.XPATH, xpath)
+            for item in menu_items:
+                menu_data += item.text + "\n"  
+            menu_data += "\n"
 
-        formatted_menu += f"Dinner:\n"
-        dinner_menu = week_menu.get('Dinner', {}).get(current_day, {})
-        for dish, description in dinner_menu.items():
-            if isinstance(description, list):
-                description = ', '.join(description)
-            formatted_menu += f"  {dish}: {description}\n"
-    else:
-        for meal in ['Breakfast', 'Dinner']:
-            formatted_menu += f"{meal}:\n"
-            day_menu = data.get(meal, {}).get(current_day, {})
-            for dish, description in day_menu.items():
-                if isinstance(description, list):
-                    description = ', '.join(description)
-                formatted_menu += f"  {dish}: {description}\n"
+        # Get KOVE Menu
+        menu_data += "Menu for KOVE:\n"
+        kove_xpath = "//h2[contains(text(), 'KOVE')]/following-sibling::div//li[@ng-repeat='item in category.ITEMS']"
+        kove_menu_items = driver.find_elements(By.XPATH, kove_xpath)
+        for item in kove_menu_items:
+            menu_data += item.text + "\n"  
 
-        if 'Week2' in data and current_week in data['Week2']:
-            formatted_menu += "Lunch:\n"
-            lunch_menu = data['Week2'][current_week].get(current_day, {})
-            for dish, description in lunch_menu.items():
-                if isinstance(description, list):
-                    description = ', '.join(description)
-                formatted_menu += f"  {dish}: {description}\n"
+    finally:
+        driver.quit()
 
-    return formatted_menu
+    return menu_data
 
 def send_discord_webhook(menu_text): 
     webhook_url = os.environ['DISCORD_WEBHOOK_URL']
@@ -90,33 +78,24 @@ def send_discord_webhook(menu_text):
         "icon_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png"
     }
 
-    for section in sections:
-        meal_type, items = section.split(':\n', 1)
-        table_content = f'```{meal_type}:\n'
-        for item in items.split('\n'):
-            if item:
-                dish, _, description = item.partition(': ')
-                table_content += f"{dish: <20} {description}\n"  # Text alignment to create a table-like format
-        table_content += '```'  # Closing the code block
+    embed = {
+        "author": author,
+        "title": f"Meal for {datetime.now().strftime('%A, %B %d')}",  # Setting title to "{meal_type} for {current date}"
+        "description": menu_text,
+        "color": 3447003,
+    }
 
-        embed = {
-            "author": author,
-            "title": f"{meal_type} for {datetime.now().strftime('%A, %B %d')}",  # Setting title to "{meal_type} for {current date}"
-            "description": table_content,
-            "color": 3447003,
-        }
+    payload = {
+        "username": "Pitchfork Menu Bot",
+        "avatar_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png",
+        "embeds": [embed]
+    }
 
-        payload = {
-            "username": "Pitchfork Menu Bot",
-            "avatar_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png",
-            "embeds": [embed]
-        }
-
-        response = requests.post(webhook_url, json=payload)
-        if response.status_code == 204:
-            print(f"Webhook sent successfully for {datetime.now()}!")
-        else:
-            print(f"Failed to send webhook for {meal_type} with status code: {response.status_code}")
+    response = requests.post(webhook_url, json=payload)
+    if response.status_code == 204:
+        print(f"Webhook sent successfully for {datetime.now()}!")
+    else:
+        print(f"Failed to send webhook with status code: {response.status_code}")
         
 
 def send_email(subject, message_body, to_email, recipient_name):
@@ -148,13 +127,13 @@ def send_email(subject, message_body, to_email, recipient_name):
 mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'], ['wonge@dickinson.edu', 'Evan Wong'],['kimbo@dickinson.edu','Boosung Kim'],['siripuns@dickinson.edu','Supasinee Siripun'],['gonzalec@dickinson.edu','Chris Gonzalez']]
 
 def send_emails():
-    menu_text = read_json_menu()
+    menu_text = get_menu_from_website()
     for email, name in mail_list:
         print(f"Sending email to {name} at {email}...")
         send_email(find_week(), menu_text, email, name)
 
 def send_test_emails():
-    menu_text = read_json_menu()
+    menu_text = get_menu_from_website()
     print(f"Sending email to {mail_list[0][1]} at {mail_list[0][0]}...")
     send_email(find_week(), menu_text, mail_list[0][0], mail_list[0][1])
 
@@ -163,5 +142,5 @@ def send_test_emails():
 send_emails()
 
 #Discord Webhook stuff
-menu_text = read_json_menu()
+menu_text = get_menu_from_website()
 send_discord_webhook(menu_text)
