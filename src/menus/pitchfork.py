@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from typing_extensions import *
 
 def find_week():
     today = datetime.now()
