@@ -24,7 +24,7 @@ def find_week():
                 end_date = datetime(today.year + 1, 1, 1)
             if start_date <= today < end_date:
                 return rows[i]['Week']
-    return "Week not found"
+    return f"Meal for {datetime.now().strftime('%A, %B %d')}"
 
 def get_menu_from_website():
     url = 'https://www.dickinson.edu/info/20205/campus_dining/4425/dining_menus'
