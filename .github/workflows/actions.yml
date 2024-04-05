@@ -2,7 +2,7 @@ name: Pitchfork Deployment
 
 on:
   schedule:
-    - cron:  '0 13 * * *'
+    - cron:  '0 11 * * *'
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
          GMAIL_USER: ${{ secrets.GMAIL_USER }}
          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python src/menus/pitchfork.py
+        run: python src/pitchfork.py
