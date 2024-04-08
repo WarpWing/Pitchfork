@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+import os
+import time
+import requests
+import csv
+from datetime import datetime
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from typing_extensions import *
+
+def find_week():
+    return f"Meal for {datetime.now().strftime('%A, %B %d')}"
+
+def get_menu_from_website():
+    url = 'https://www.dickinson.edu/info/20205/campus_dining/4425/dining_menus'
+    
+    # Configure Chrome options for headless mode
+    options = Options()
+    options.add_argument("--headless") # Explicitly add headless argument
+    options.add_argument("--disable-gpu") # Disable GPU hardware acceleration
+    options.add_argument("--no-sandbox") # Bypass OS security model
+    options.add_argument("--disable-dev-shm-usage") # Overcome limited resource problems
+    
+    driver = webdriver.Chrome(options=options) # Ensure the path to chromedriver is correctly set
+    
+    menu_data = ""
+    
+    try:
+        driver.get(url)
+        time.sleep(5) # Adjust based on the page load time
+        
+        # Find all menu item elements for each meal type
+        meals = ['Breakfast', 'Lunch', 'Dinner']
+        for meal in meals:
+            menu_data += f"Menu for {meal}:\n"
+            xpath = f"//h3[contains(text(), '{meal}')]/following-sibling::div//li[@ng-repeat='item in category.ITEMS']"
+            menu_items = driver.find_elements(By.XPATH, xpath)
+            for item in menu_items:
+                menu_data += item.text + "\n"
+            menu_data += "\n"
+        
+        # Get KOVE Menu
+        menu_data += "Menu for KOVE:\n"
+        kove_xpath = "//h2[contains(text(), 'KOVE')]/following-sibling::div//li[@ng-repeat='item in category.ITEMS']"
+        kove_menu_items = driver.find_elements(By.XPATH, kove_xpath)
+        for item in kove_menu_items:
+            menu_data += item.text + "\n"
+    
+    finally:
+        driver.quit()
+    
+    return menu_data
+
+week = find_week()
+menu = get_menu_from_website()
+    
+print(week)
+print(menu)
