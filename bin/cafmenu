@@ -8,6 +8,8 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from typing_extensions import *
 
 def find_week():
@@ -18,18 +20,21 @@ def get_menu_from_website():
     
     # Configure Chrome options for headless mode
     options = Options()
-    options.add_argument("--headless") # Explicitly add headless argument
-    options.add_argument("--disable-gpu") # Disable GPU hardware acceleration
-    options.add_argument("--no-sandbox") # Bypass OS security model
-    options.add_argument("--disable-dev-shm-usage") # Overcome limited resource problems
+    options.add_argument("--headless")  # Explicitly add headless argument
+    options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
+    options.add_argument("--no-sandbox")  # Bypass OS security model
+    options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+    options.add_argument("--log-level=3")  # Suppress logging messages
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])  # exclude switching and disable high level of logs.
     
-    driver = webdriver.Chrome(options=options) # Ensure the path to chromedriver is correctly set
+    # Use webdriver_manager to automatically manage the ChromeDriver
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
     
     menu_data = ""
-    
     try:
         driver.get(url)
-        time.sleep(5) # Adjust based on the page load time
+        time.sleep(5)  # Adjust based on the page load time
         
         # Find all menu item elements for each meal type
         meals = ['Breakfast', 'Lunch', 'Dinner']
@@ -47,7 +52,6 @@ def get_menu_from_website():
         kove_menu_items = driver.find_elements(By.XPATH, kove_xpath)
         for item in kove_menu_items:
             menu_data += item.text + "\n"
-    
     finally:
         driver.quit()
     
@@ -55,6 +59,6 @@ def get_menu_from_website():
 
 week = find_week()
 menu = get_menu_from_website()
-    
+
 print(week)
 print(menu)
