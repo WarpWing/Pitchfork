@@ -52,38 +52,6 @@ def get_menu_from_website():
         driver.quit()
 
     return menu_data
-
-def send_discord_webhook(menu_text): 
-    webhook_url = os.environ['DISCORD_WEBHOOK_URL']
-    if not webhook_url:
-        print("The webhook URL is not set. Please check your environment variables.")
-        return
-
-    sections = menu_text.split('\n\n')
-    author = {
-        "name": "Pitchfork Menu Bot",
-        "url": "https://github.com/WarpWing/Pitchfork",
-        "icon_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png"
-    }
-
-    embed = {
-        "author": author,
-        "title": f"Meal for {datetime.now().strftime('%A, %B %d')}",  # Setting title to "{meal_type} for {current date}"
-        "description": menu_text,
-        "color": 3447003,
-    }
-
-    payload = {
-        "username": "Pitchfork Menu Bot",
-        "avatar_url": "https://i.pinimg.com/originals/fa/ad/3e/faad3eac446d8a0933d010f383d2293f.png",
-        "embeds": [embed]
-    }
-
-    response = requests.post(webhook_url, json=payload)
-    if response.status_code == 204:
-        print(f"Webhook sent successfully for {datetime.now()}!")
-    else:
-        print(f"Failed to send webhook with status code: {response.status_code}")
         
 
 def send_email(subject, message_body, to_email, recipient_name):
@@ -106,7 +74,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana'],['siripuns@dickinson.edu','Supasinee Siripun']]
+mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana']]
 
 def send_emails():
     menu_text = get_menu_from_website()
@@ -123,6 +91,3 @@ def send_test_emails():
 # Uncomment the next line to send to all emails
 send_emails()
 
-#Discord Webhook stuff
-menu_text = get_menu_from_website()
-send_discord_webhook(menu_text)
