@@ -16,9 +16,8 @@ def find_week():
 def get_menu_from_website():
     url = 'https://www.dickinson.edu/info/20205/campus_dining/4425/dining_menus'
 
-    # Configure Chrome options for headless mode
     options = Options()
-    options.add_argument("--headless")  # Explicitly add headless argument
+    options.add_argument("--headless") 
     options.add_argument("--disable-gpu")  # Disable GPU hardware acceleration
     options.add_argument("--no-sandbox")  # Bypass OS security model
     options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
