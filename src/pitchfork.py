@@ -73,7 +73,7 @@ def send_email(subject, message_body, to_email, recipient_name):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-mail_list = [['chermsit@dickinson.edu', 'Ty Chermsirivatana']]
+mail_list = [['dickine@dickinson.edu', 'Emily Dickinson']]
 
 def send_emails():
     menu_text = get_menu_from_website()
